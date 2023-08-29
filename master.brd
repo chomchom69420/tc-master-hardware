@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.003125" altunitdist="mic" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -28,13 +28,13 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
@@ -191,15 +191,12 @@
 <wire x1="160" y1="19" x2="160" y2="56" width="0" layer="20"/>
 <wire x1="160" y1="56" x2="100" y2="56" width="0" layer="20"/>
 <wire x1="100" y1="56" x2="100" y2="19" width="0" layer="20"/>
-<text x="153.98" y="24.4" size="1" layer="25" align="center">++</text>
+<text x="153.98" y="24.4" size="1" layer="26" align="center">++</text>
 <text x="153.68" y="36.4" size="1" layer="26" rot="MR180" align="center">--</text>
-<text x="114.4" y="27" size="1.778" layer="25" rot="R90">Traffic Controller
+<text x="111.1" y="25.7" size="1.778" layer="25" rot="R90">Traffic Controller
 Master v1.0
-Designed by:
-Soham Chakraborty
-Tanmoy Dutta</text>
-<dimension x1="160" y1="19" x2="100" y2="19" x3="130" y3="14.1" textsize="1.778" layer="16"/>
-<dimension x1="100" y1="19" x2="100" y2="56" x3="92" y3="37.5" textsize="1.778" layer="16"/>
+(c) and Mfgd by:
+Security Engineers</text>
 </plain>
 <libraries>
 <library name="OPL_Capacitor" urn="urn:adsk.eagle:library:8004261">
@@ -1182,8 +1179,8 @@ type 0207, grid 10 mm</description>
 <elements>
 <element name="C2" library="OPL_Capacitor" library_urn="urn:adsk.eagle:library:8004261" package="C0603" package3d_urn="urn:adsk.eagle:package:8004287/1" value="100pF" x="143.02" y="35.75" smashed="yes" rot="MR90">
 <attribute name="MPN" value="GRM1885C1H102JA01D" x="45.23" y="86.55" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="144.29" y="35.496" size="0.635" layer="34" ratio="10" rot="MR0"/>
 <attribute name="NAME" x="144.539" y="34.41" size="0.889" layer="26" ratio="11" rot="MR90"/>
+<attribute name="NAME" x="144.29" y="35.496" size="0.635" layer="34" ratio="10" rot="MR0"/>
 <attribute name="VALUE" x="144.29" y="34.1625" size="0.635" layer="28" ratio="10" rot="MR0"/>
 </element>
 <element name="C3" library="OPL_Capacitor" library_urn="urn:adsk.eagle:library:8004261" package="C0805" package3d_urn="urn:adsk.eagle:package:8004286/1" value="10uF" x="107.82" y="46.57" smashed="yes" rot="MR0">
@@ -1198,20 +1195,20 @@ type 0207, grid 10 mm</description>
 </element>
 <element name="C5" library="OPL_Capacitor" library_urn="urn:adsk.eagle:library:8004261" package="C0603" package3d_urn="urn:adsk.eagle:package:8004287/1" value="1uF" x="109.71" y="37.16" smashed="yes" rot="MR90">
 <attribute name="MPN" value="CC0603KRX7R9BB102" x="3.03" y="109.55" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="110.98" y="36.906" size="0.635" layer="34" ratio="10" rot="MR0"/>
 <attribute name="NAME" x="110.98" y="38.049" size="0.889" layer="26" ratio="11" rot="MR0"/>
+<attribute name="NAME" x="110.98" y="36.906" size="0.635" layer="34" ratio="10" rot="MR0"/>
 <attribute name="VALUE" x="110.98" y="35.5725" size="0.635" layer="28" ratio="10" rot="MR0"/>
 </element>
 <element name="CB" library="OPL_Capacitor" library_urn="urn:adsk.eagle:library:8004261" package="C0603" package3d_urn="urn:adsk.eagle:package:8004287/1" value="100nF" x="132.08" y="40.83" smashed="yes" rot="MR270">
 <attribute name="MPN" value="GRM1885C1H102JA01D" x="229.87" y="-15.05" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="130.81" y="41.084" size="0.635" layer="34" ratio="10" rot="MR180"/>
 <attribute name="NAME" x="130.541" y="41.59" size="0.889" layer="26" ratio="11" rot="MR270"/>
+<attribute name="NAME" x="130.81" y="41.084" size="0.635" layer="34" ratio="10" rot="MR180"/>
 <attribute name="VALUE" x="130.81" y="42.3175" size="0.635" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="CEN" library="OPL_Capacitor" library_urn="urn:adsk.eagle:library:8004261" package="C0603" package3d_urn="urn:adsk.eagle:package:8004287/1" value="100nF" x="137.59" y="41.22" smashed="yes" rot="MR0">
 <attribute name="MPN" value="GRM1885C1H102JA01D" x="96.95" y="-56.57" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="137.844" y="42.49" size="0.635" layer="34" ratio="10" rot="MR270"/>
 <attribute name="NAME" x="139.49" y="42.899" size="0.889" layer="26" ratio="11" rot="MR0"/>
+<attribute name="NAME" x="137.844" y="42.49" size="0.635" layer="34" ratio="10" rot="MR270"/>
 <attribute name="VALUE" x="138.9775" y="42.69" size="0.635" layer="28" ratio="10" rot="MR270"/>
 </element>
 <element name="CIN1" library="OPL_Capacitor" library_urn="urn:adsk.eagle:library:8004261" package="C0805" package3d_urn="urn:adsk.eagle:package:8004286/1" value="10uF" x="129.92" y="26.76" smashed="yes" rot="MR0">
@@ -1251,8 +1248,8 @@ type 0207, grid 10 mm</description>
 </element>
 <element name="CSS" library="OPL_Capacitor" library_urn="urn:adsk.eagle:library:8004261" package="C0603" package3d_urn="urn:adsk.eagle:package:8004287/1" value="47nF" x="135.83" y="41.18" smashed="yes" rot="MR180">
 <attribute name="MPN" value="CC0603KRX7R9BB102" x="181.55" y="138.97" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="135.576" y="39.91" size="0.635" layer="34" ratio="10" rot="MR90"/>
 <attribute name="NAME" x="134.31" y="43.781" size="0.889" layer="26" ratio="11" rot="MR180"/>
+<attribute name="NAME" x="135.576" y="39.91" size="0.635" layer="34" ratio="10" rot="MR90"/>
 <attribute name="VALUE" x="134.91" y="39.6575" size="0.635" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="CTON" library="OPL_Capacitor" library_urn="urn:adsk.eagle:library:8004261" package="C0402" package3d_urn="urn:adsk.eagle:package:8004285/1" value="100pF" x="132.16" y="47.16" smashed="yes" rot="MR270">
